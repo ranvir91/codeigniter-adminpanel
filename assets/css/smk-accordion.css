@@ -1,0 +1,80 @@
+.smk_accordion{
+	position: relative;
+	margin-bottom: 20px;
+}
+.smk_accordion .accordion_in {
+	margin-bottom:1px;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+}
+
+/* Head */
+.smk_accordion .accordion_in .acc_head{
+	position: relative;
+	background: #fff;
+	padding: 10px;
+	font-size: 14px;
+	display: block;
+	cursor: pointer; 
+}
+
+/* Content */
+.smk_accordion .accordion_in .acc_content{
+	background: #f3f3f3;
+	color: #7B7E85;
+	padding: 3px 10px;
+}
+.smk_accordion .accordion_in h1:first-of-type,
+.smk_accordion .accordion_in h2:first-of-type,
+.smk_accordion .accordion_in h3:first-of-type,
+.smk_accordion .accordion_in h4:first-of-type,
+.smk_accordion .accordion_in h5:first-of-type,
+.smk_accordion .accordion_in h6:first-of-type
+{
+	margin-top: 5px;
+}
+
+
+/* Icon expand */
+.smk_accordion .accordion_in .acc_head .acc_icon_expand{
+	display: none;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -9px;
+	background: url(../images/plusminus.png) center 0;
+}
+.smk_accordion .accordion_in.acc_active .acc_head .acc_icon_expand{
+	background: url(../images/plusminus.png) center -18px;
+}
+
+/* JS requires */
+.smk_accordion .accordion_in.acc_active .acc_content{ 
+	display: block;
+}
+.smk_accordion .accordion_in.acc_active .acc_head{
+	background: #e9e9e9;
+}
+
+
+.listMenu  {
+	padding-left:15px;
+}
+.listMenu li {
+	list-style-type:disc
+}
+.listMenu li a {
+	color:#666;
+	display: block;
+    font-size: 12px;
+    padding: 4px 0;
+    width: 100%;
+}
+
+.selected {
+	color: #000 !important;
+    font-weight: bold;
+}

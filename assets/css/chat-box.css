@@ -1,0 +1,126 @@
+.message_detail {
+    background-color: #fff;
+}
+
+.message_detail .content {
+    padding: 10px 15px 30px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.chat_items {
+    width: 100%;
+    float: left;
+}
+.chat_items li {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.chat_items li:last-child {
+	margin-bottom: 0;
+}
+
+.user_1,
+.user_2 {
+    position: relative;
+}
+
+.user_1 .chat_wrap,
+.user_2 .chat_wrap {
+    width: 100%;
+}
+.user_1 a,
+.user_2 a {
+    margin: 5px 0 0 9px;
+}
+
+
+.user_1 .chat,
+.user_2 .chat {
+    background-color: #62bf6e;
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.chat sup {
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    display: block;
+    background-image: url(../images/sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -63px -135px;
+}
+
+.user_1 .user-info,
+.user_2 .user-info {
+	font-size: 13px;
+	color: #b9bcc0;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.user_2 .user-info {
+	text-align: right;
+}
+
+.user_1 .user-info span,
+.user_2 .user-info span {
+	background-color: #62bf6e;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	display: inline-block;
+	position: relative;
+	top: -2px;
+}
+
+.user_2 .user-info span {
+	background-color: #7bc4ef;
+	top: 0px;
+}
+
+.user_1 .user-info strong,
+.user_2 .user-info strong {
+	font-weight: 600;
+	color: #444750;
+	margin: 0 10px;
+}
+
+.user_2 .chat {
+    float: right;
+    background-color: #7bc4ef;
+    text-align: right;
+}
+
+.user_2 .chat sup {
+    background-position: -87px -135px;
+    right: 20px;
+    left: auto;
+}
+.user_2 .chat_wrap {
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    .user_1 .chat,
+    .user_2 .chat {
+        width: 100%;
+    }
+
+    .message_detail .content {
+        padding: 10px 0px 30px 0px;
+    }
+}
