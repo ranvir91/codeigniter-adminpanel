@@ -7,10 +7,6 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 
-application/config/database.php
-application/config/config.php
-application/config/constants.php
-
 error_log
 .htaccess
 uploads/*
